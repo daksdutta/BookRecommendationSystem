@@ -1,0 +1,32 @@
+/* Card hover effect */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Prevent text overflow */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1512820790803-83ca734da794") center/cover no-repeat;
+  height: 280px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}

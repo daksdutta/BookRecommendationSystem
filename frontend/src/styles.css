@@ -1,0 +1,18 @@
+.small-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.small-card {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.small-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}

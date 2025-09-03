@@ -1,0 +1,22 @@
+<h4 class="text-success mb-3">🔎 Recommendations for "<span class="fw-bold">{{ bookName }}</span>"</h4>
+
+<!-- Loader -->
+<div *ngIf="loading" class="text-center my-4">
+  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;"></div>
+</div>
+
+<!-- Error -->
+<div *ngIf="errorMsg" class="alert alert-danger text-center">{{ errorMsg }}</div>
+
+<!-- Recommendations -->
+<div class="row" *ngIf="recommendations.length > 0">
+  <div class="col-6 col-md-3 col-lg-2 mb-3" *ngFor="let book of recommendations">
+    <div class="card h-100 shadow-sm border-0 hover-card small-card">
+      <img [src]="book.image" class="card-img-top" alt="Book cover">
+      <div class="card-body p-2 text-center">
+        <h6 class="card-title fw-bold small-text">{{ book.title }}</h6>
+        <p class="text-muted mb-1 small-text">by {{ book.author }}</p>
+      </div>
+    </div>
+  </div>
+</div>
